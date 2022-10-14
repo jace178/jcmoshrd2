@@ -647,13 +647,14 @@ a {
 .feature__image {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .feature: nth-of-type(even);
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content-left {
+    order: 2;
+  }
+  .feature__content {
+    order: 1;
+  }
 }
-.feature__content {
-  order: 2;
-}
-
 /* Showcase Block */
 .block-showcase__image > img {
   width: 100%;
@@ -733,4 +734,8 @@ a {
 }
 .footer__heading {
   font-size: 1.6rem;
+}
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
 }
