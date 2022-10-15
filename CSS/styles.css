@@ -404,6 +404,7 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -648,11 +649,8 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .feature:nth-of-type(even) .feature__content-left {
+  .feature:nth-of-type(even) .feature__content {
     order: 2;
-  }
-  .feature__content {
-    order: 1;
   }
 }
 /* Showcase Block */
